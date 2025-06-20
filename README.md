@@ -1,6 +1,6 @@
 # My Anchor Token Program
 
-A comprehensive Solana token program built with Anchor that implements advanced tokenomics including:
+Solana token program built with Anchor that implements advanced tokenomics including:
 - Transfer taxes
 - Whitelisting
 - Liquidity pool rewards
