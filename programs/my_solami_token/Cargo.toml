@@ -1,0 +1,25 @@
+[package]
+name = "my_solami_token"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { workspace = true, features = ["init-if-needed"] }
+anchor-spl = { workspace = true }
+solana-program = { workspace = true }
+spl-token = { workspace = true, features = ["no-entrypoint"] }
+spl-associated-token-account = { workspace = true, features = ["no-entrypoint"] }
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

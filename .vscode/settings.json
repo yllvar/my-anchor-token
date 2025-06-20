@@ -1,0 +1,4 @@
+{
+    "rust-analyzer.cargo.features": ["idl-build"],
+    "rust-analyzer.procMacro.enable": false
+}
